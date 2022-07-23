@@ -1,0 +1,15 @@
+package com.lviv.frost.gof.structural.bridge.program;
+
+import com.lviv.frost.gof.structural.bridge.developer.Developer;
+
+public class StockExchangeProgram extends Program {
+    public StockExchangeProgram(Developer developer) {
+        super(developer);
+    }
+
+    @Override
+    public void developProgram() {
+        System.out.println("Stock Exchange development in progress...");
+        developer.writeCode();
+    }
+}
